@@ -1,7 +1,9 @@
+using System;
+
 namespace PierresBakery.Models
 {
-  public class ClassName
+  public class Pastry
   {
-    // Business Logic goes here.
+
   }
 }
