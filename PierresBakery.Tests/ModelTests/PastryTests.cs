@@ -6,6 +6,11 @@ namespace PierresBakery.Tests
   [TestClass]
   public class PastryTests
   {
-    // Tests will go here!
+    [TestMethod]
+    public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
+    {
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
   }
 }

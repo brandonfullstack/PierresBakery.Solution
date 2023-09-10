@@ -12,6 +12,5 @@ namespace PierresBakery.Tests
       Bread newBread = new Bread();
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
-
   }
 }
