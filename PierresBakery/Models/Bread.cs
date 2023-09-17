@@ -11,12 +11,13 @@ namespace PierresBakery.Models
       this.Quantity = breadQuantity;
     }
     
-    public double GetBreadPrice()
+    public decimal GetBreadPrice()
     {
-        int freeLoaves = this.Quantity / 3;
-        int paidLoaves = this.Quantity - freeLoaves;
+      // Buy 2, get 1 free logic
+      int freeLoaves = this.Quantity / 3;
+      int paidLoaves = this.Quantity - freeLoaves;
 
-        return paidLoaves * 5;
+      return paidLoaves * 5;
     }
   }
 }

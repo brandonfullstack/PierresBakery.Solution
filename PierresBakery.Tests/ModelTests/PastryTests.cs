@@ -16,27 +16,27 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void TestPastryPrice1Pastry()
     {
-    // Arrange
-    Pastry pastry = new Pastry(1);
+      // Arrange
+      Pastry pastry = new Pastry(1);
 
-    // Act
-    double price = pastry.GetPastryPrice();
+      // Act
+      decimal price = pastry.GetPastryPrice();
 
-    // Assert
-    Assert.AreEqual(2, price);
+      // Assert
+      Assert.AreEqual(2, price);
     }
 
     [TestMethod]
     public void TestPastryPrice5Pastry()
     {
-    // Arrange
-    Pastry pastry = new Pastry(5);
+      // Arrange
+      Pastry pastry = new Pastry(5);
 
-    // Act
-    double price = pastry.GetPastryPrice();
+      // Act
+      decimal price = pastry.GetPastryPrice();
 
-    // Assert
-    Assert.AreEqual(8, price);
+      // Assert
+      Assert.AreEqual(8, price);
     }
   }
 }
