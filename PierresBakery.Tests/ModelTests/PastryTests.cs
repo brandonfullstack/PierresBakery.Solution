@@ -9,8 +9,21 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
-      Pastry newPastry = new Pastry();
+      Pastry newPastry = new Pastry(1);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
+    
+    [TestMethod]
+    public void TestPastryPrice1Pastry()
+    {
+    // Arrange
+    Pastry pastry = new Pastry(1);
+
+    // Act
+    double price = pastry.GetPastryPrice();
+
+    // Assert
+    Assert.AreEqual(2, price);
     }
   }
 }
