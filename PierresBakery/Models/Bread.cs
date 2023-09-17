@@ -13,15 +13,10 @@ namespace PierresBakery.Models
     
     public double GetBreadPrice()
     {
-        double breadPrice = this.Quantity * 5;
-        
-        if (this.Quantity % 3 == 0)
-         {
-           breadPrice -= 5;
-         }
+        int freeLoaves = this.Quantity / 3;
+        int paidLoaves = this.Quantity - freeLoaves;
 
-          return breadPrice;
-
+        return paidLoaves * 5;
     }
   }
 }

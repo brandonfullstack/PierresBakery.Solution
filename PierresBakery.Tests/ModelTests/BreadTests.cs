@@ -25,5 +25,18 @@ namespace PierresBakery.Tests
     // Assert
     Assert.AreEqual(5, price);
     }
+    [TestMethod]
+    
+    public void TestBreadPrice4Loaves()
+    {
+    // Arrange
+    Bread bread = new Bread(4);
+
+    // Act
+    double price = bread.GetBreadPrice();
+
+    // Assert
+    Assert.AreEqual(15, price);
+}
   }
 }
